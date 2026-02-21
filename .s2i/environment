@@ -1,0 +1,7 @@
+# Configuración para Source-to-Image (S2I) de Python
+
+# Módulo WSGI: archivo:variable (app.py contiene la variable 'app')
+APP_MODULE=app:app
+
+# Número de workers de Gunicorn
+GUNICORN_WORKERS=2
