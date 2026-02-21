@@ -24,4 +24,4 @@ ENV PORT=8080 \
 
 EXPOSE ${PORT}
 
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:${PORT}", "--workers", "2", "--access-logfile", "-", "--error-logfile", "-"]
+CMD gunicorn app:app --bind 0.0.0.0:${PORT:-8080} --workers 2 --access-logfile - --error-logfile -
