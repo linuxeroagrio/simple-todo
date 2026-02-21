@@ -19,9 +19,9 @@ RUN chown -R 1001:0 /opt/app-root/src && \
 USER 1001
 
 ENV PORT=8080 \
-    FLASK_ENV=production \
+    FLASK_ENV=development \
     PYTHONUNBUFFERED=1
 
-EXPOSE 8080
+EXPOSE ${PORT}
 
 CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:${PORT}", "--workers", "2", "--access-logfile", "-", "--error-logfile", "-"]
