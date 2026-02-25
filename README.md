@@ -30,8 +30,8 @@ flowchart TB
     end
 
     subgraph Datos["Base de Datos"]
-        SQLite[(SQLite\nDesarrollo)]
-        PostgreSQL[(PostgreSQL\nProducción)]
+        SQLite[(SQLite Desarrollo)]
+        PostgreSQL[(PostgreSQL Producción)]
     end
 
     Browser -->|HTTP :8080| Gunicorn
