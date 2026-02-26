@@ -1,4 +1,4 @@
-FROM quay.io/sclorg/python-312-c10s:c10s
+FROM quay.io/sclorg/python-312-minimalc10s:c10s
 
 LABEL name="simple-todo" \
       version="1.0" \
